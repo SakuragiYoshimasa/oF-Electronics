@@ -31,9 +31,6 @@ public:
     
     double weight;
     
-    
-    
-
     PointCharge(double Charge,ofPoint Position,bool isMoved = true){
         
         this->charge = Charge;
@@ -41,9 +38,9 @@ public:
         this->isMoved = isMoved;
         this->speedVector = ofVec3f(0,0,0);
         
-        this->weight = 10000000;
+        this->weight = 1000000000;
         
-        pointCharge = ofSpherePrimitive(20, 20);
+        pointCharge = ofSpherePrimitive(10, 20);
         
     }
     
@@ -71,7 +68,7 @@ public:
         this->acceralateVector = ofVec3f(0,0,0);
         
         for(int i = 0; i < pointCharges.size(); i++){
-            if(pointCharges[i].position != this->position){
+            if(!( (pointCharges[i].position == this->position) && (pointCharges[i].charge == this->charge)) ){
                 
                 acceptPowerVector = calcTwoChargesAffection(*this,pointCharges[i]);
          

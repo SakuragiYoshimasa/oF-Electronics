@@ -16,11 +16,9 @@
 
 
 class ElectricField {
-private:
-    
-    vector<PointCharge> pointCharges;
     
 public:
+    vector<PointCharge> pointCharges;
     ElectricField(vector<ofPoint> positionsOfPointCharges,vector<double> charges,vector<bool> ismoved){
         
         for(int i = 0; i < positionsOfPointCharges.size(); i++){
@@ -35,6 +33,10 @@ public:
         for(int i = 0; i < pointCharges.size(); i++){
             pointCharges[i].drawPointCharge(pointCharges);
         }
+    }
+    
+    void addPointCharge(PointCharge pointCharge){
+        this->pointCharges.push_back(pointCharge);
     }
     
 
