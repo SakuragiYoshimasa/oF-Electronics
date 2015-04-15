@@ -19,15 +19,22 @@ private:
     
     ofSpherePrimitive pointCharge;
     
+    bool isMoved;
+    
 public:
-    PointCharge(double Charge,ofPoint Position){
+    PointCharge(double Charge,ofPoint Position,bool isMoved = true){
+        
         this->charge = Charge;
         this->position = Position;
+        this->isMoved = isMoved;
         pointCharge = ofSpherePrimitive(10, 20);
+        
     }
     
     void drawPointCharge(){
+        
         pointCharge.setPosition(position);
-        pointCharge.draw();
+        pointCharge.drawWireframe();
+        
     }
 };

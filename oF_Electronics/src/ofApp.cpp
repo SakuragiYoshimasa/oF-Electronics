@@ -3,6 +3,18 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
+    vector<ofPoint> positions;
+    vector<double> charges;
+    
+    positions.push_back(ofPoint(100,0,0));
+    positions.push_back(ofPoint(200,100,0));
+    
+    charges.push_back(10);
+    charges.push_back(10);
+    
+    electricField = ElectricField(positions,charges);
+    
+    ofBackground(0);
 }
 
 //--------------------------------------------------------------
@@ -12,6 +24,8 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    
+    electricField.Draw();
 
 }
 
