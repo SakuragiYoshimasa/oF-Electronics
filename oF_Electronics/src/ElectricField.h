@@ -6,20 +6,26 @@
 //
 //
 
-#include "ofMain.h"
+
+
+#ifndef __oF_Electronics__ElectricField__
+#define __oF_Electronics__ElectricField__
+
 #include "PointCharge.h"
+#include "ofMain.h"
+
 
 class ElectricField {
 private:
     
-    vector<PointCharge *> pointCharges;
+    vector<PointCharge> pointCharges;
     
 public:
-    ElectricField(vector<ofPoint> positionsOfPointCharges,vector<double> charges){
+    ElectricField(vector<ofPoint> positionsOfPointCharges,vector<double> charges,vector<bool> ismoved){
         
         for(int i = 0; i < positionsOfPointCharges.size(); i++){
         
-            pointCharges.push_back(new PointCharge(charges[i],positionsOfPointCharges[i],false));
+            pointCharges.push_back(PointCharge(charges[i],positionsOfPointCharges[i],ismoved[i]));
             
         }
     }
@@ -27,9 +33,11 @@ public:
     
     void Draw(){
         for(int i = 0; i < pointCharges.size(); i++){
-            pointCharges[i]->drawPointCharge();
+            pointCharges[i].drawPointCharge(pointCharges);
         }
     }
     
 
 };
+
+#endif

@@ -5,14 +5,18 @@ void ofApp::setup(){
 
     vector<ofPoint> positions;
     vector<double> charges;
+    vector<bool> ismoved;
     
     positions.push_back(ofPoint(100,0,0));
     positions.push_back(ofPoint(200,100,0));
     
     charges.push_back(10);
-    charges.push_back(10);
+    charges.push_back(-10);
     
-    electricField = ElectricField(positions,charges);
+    ismoved.push_back(false);
+    ismoved.push_back(true);
+    
+    electricField = ElectricField(positions,charges,ismoved);
     
     ofBackground(0);
 }

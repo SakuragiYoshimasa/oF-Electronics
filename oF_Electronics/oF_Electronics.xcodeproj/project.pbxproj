@@ -31,6 +31,8 @@
 		FA84BE851ADE699100C4D5D0 /* PointCharge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA84BE831ADE699100C4D5D0 /* PointCharge.cpp */; };
 		FA84BE881ADE6A8700C4D5D0 /* ElectricMamager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA84BE861ADE6A8700C4D5D0 /* ElectricMamager.cpp */; };
 		FA84BE8F1ADE6B8C00C4D5D0 /* Definition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA84BE8E1ADE6B8C00C4D5D0 /* Definition.cpp */; };
+		FA84BE921ADE8A1300C4D5D0 /* BasicElectronicsCalculation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA84BE901ADE8A1300C4D5D0 /* BasicElectronicsCalculation.cpp */; };
+		FA84BE951ADE8FB900C4D5D0 /* tst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA84BE931ADE8FB900C4D5D0 /* tst.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,10 @@
 		FA84BE871ADE6A8700C4D5D0 /* ElectricMamager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectricMamager.h; sourceTree = "<group>"; };
 		FA84BE8A1ADE6ABA00C4D5D0 /* Definition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definition.h; sourceTree = "<group>"; };
 		FA84BE8E1ADE6B8C00C4D5D0 /* Definition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Definition.cpp; path = ../../../of_v0.8.4_osx_release/libs/openFrameworksCompiled/project/osx/Definition.cpp; sourceTree = "<group>"; };
+		FA84BE901ADE8A1300C4D5D0 /* BasicElectronicsCalculation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicElectronicsCalculation.cpp; sourceTree = "<group>"; };
+		FA84BE911ADE8A1300C4D5D0 /* BasicElectronicsCalculation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicElectronicsCalculation.h; sourceTree = "<group>"; };
+		FA84BE931ADE8FB900C4D5D0 /* tst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tst.cpp; sourceTree = "<group>"; };
+		FA84BE941ADE8FB900C4D5D0 /* tst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tst.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +203,8 @@
 			children = (
 				FA98C53A1ADD545F00EADB06 /* Electronics */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				FA84BE931ADE8FB900C4D5D0 /* tst.cpp */,
+				FA84BE941ADE8FB900C4D5D0 /* tst.h */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				FA84BE801ADE5A8100C4D5D0 /* Field.cpp */,
@@ -219,6 +227,8 @@
 			children = (
 				FA84BE831ADE699100C4D5D0 /* PointCharge.cpp */,
 				FA84BE841ADE699100C4D5D0 /* PointCharge.h */,
+				FA84BE901ADE8A1300C4D5D0 /* BasicElectronicsCalculation.cpp */,
+				FA84BE911ADE8A1300C4D5D0 /* BasicElectronicsCalculation.h */,
 				FA84BE8A1ADE6ABA00C4D5D0 /* Definition.h */,
 				FA84BE8E1ADE6B8C00C4D5D0 /* Definition.cpp */,
 				FA84BE861ADE6A8700C4D5D0 /* ElectricMamager.cpp */,
@@ -320,7 +330,9 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				FA84BE881ADE6A8700C4D5D0 /* ElectricMamager.cpp in Sources */,
 				FA84BE851ADE699100C4D5D0 /* PointCharge.cpp in Sources */,
+				FA84BE921ADE8A1300C4D5D0 /* BasicElectronicsCalculation.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				FA84BE951ADE8FB900C4D5D0 /* tst.cpp in Sources */,
 				FA84BE821ADE5A8100C4D5D0 /* Field.cpp in Sources */,
 				FA84BE7F1ADE51EF00C4D5D0 /* ElectricField.cpp in Sources */,
 			);
