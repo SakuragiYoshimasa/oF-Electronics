@@ -7,12 +7,15 @@ void ofApp::setup(){
     vector<double> charges;
     vector<bool> ismoved;
     
-    positions.push_back(ofPoint(100,0,0));
-    positions.push_back(ofPoint(200,100,0));
+    positions.push_back(ofPoint(100.00,400,0));
+    positions.push_back(ofPoint(900.00,400,0));
+    positions.push_back(ofPoint(500.00,50,0));
     
+    charges.push_back(10);
     charges.push_back(10);
     charges.push_back(-10);
     
+    ismoved.push_back(false);
     ismoved.push_back(false);
     ismoved.push_back(true);
     
@@ -29,8 +32,12 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     
+    
+    ofSetColor(255, 255, 0);
+    
     electricField.Draw();
 
+    
 }
 
 //--------------------------------------------------------------

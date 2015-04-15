@@ -40,9 +40,10 @@ public:
         this->position = Position;
         this->isMoved = isMoved;
         this->speedVector = ofVec3f(0,0,0);
-        this->weight = 10000000000;
         
-        pointCharge = ofSpherePrimitive(10, 20);
+        this->weight = 10000000;
+        
+        pointCharge = ofSpherePrimitive(20, 20);
         
     }
     
@@ -51,22 +52,32 @@ public:
         updateAcceptPower(pointCharges);
         updatePosition();
         pointCharge.setPosition(position);
+        if(charge > 0){
+        
+            ofSetColor(255, 255, 0);
+
+        }else{
+        
+            ofSetColor(0, 255, 255);
+
+        }
+        
         pointCharge.drawWireframe();
         
     }
     
     void updateAcceptPower(vector<PointCharge> pointCharges){
         
+        this->acceralateVector = ofVec3f(0,0,0);
+        
         for(int i = 0; i < pointCharges.size(); i++){
             if(pointCharges[i].position != this->position){
                 
                 acceptPowerVector = calcTwoChargesAffection(*this,pointCharges[i]);
-                
-                acceralateVector = ofVec3f(0,0,0);
-                
-                acceralateVector.x = acceptPowerVector.x/weight;
-                acceralateVector.y = acceptPowerVector.y/weight;
-                acceralateVector.z = acceptPowerVector.z/weight;
+         
+                acceralateVector.x += acceptPowerVector.x/weight;
+                acceralateVector.y += acceptPowerVector.y/weight;
+                acceralateVector.z += acceptPowerVector.z/weight;
             }
         }
     }
@@ -74,13 +85,13 @@ public:
     void updatePosition(){
         
         if(isMoved){
-        this->speedVector.x += acceralateVector.x;
-        this->speedVector.y += acceralateVector.y;
-        this->speedVector.z += acceralateVector.z;
+            this->speedVector.x += acceralateVector.x;
+            this->speedVector.y += acceralateVector.y;
+            this->speedVector.z += acceralateVector.z;
         
-        this->position.x += this->speedVector.x;
-        this->position.y += this->speedVector.y;
-        this->position.z += this->speedVector.z;
+            this->position.x += this->speedVector.x;
+            this->position.y += this->speedVector.y;
+            this->position.z += this->speedVector.z;
         }
     }
     
