@@ -26,6 +26,11 @@
 		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
+		FA84BE7F1ADE51EF00C4D5D0 /* ElectricField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA84BE7D1ADE51EF00C4D5D0 /* ElectricField.cpp */; };
+		FA84BE821ADE5A8100C4D5D0 /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA84BE801ADE5A8100C4D5D0 /* Field.cpp */; };
+		FA84BE851ADE699100C4D5D0 /* PointCharge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA84BE831ADE699100C4D5D0 /* PointCharge.cpp */; };
+		FA84BE881ADE6A8700C4D5D0 /* ElectricMamager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA84BE861ADE6A8700C4D5D0 /* ElectricMamager.cpp */; };
+		FA84BE8F1ADE6B8C00C4D5D0 /* Definition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA84BE8E1ADE6B8C00C4D5D0 /* Definition.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +87,16 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		FA84BE7D1ADE51EF00C4D5D0 /* ElectricField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ElectricField.cpp; sourceTree = "<group>"; };
+		FA84BE7E1ADE51EF00C4D5D0 /* ElectricField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectricField.h; sourceTree = "<group>"; };
+		FA84BE801ADE5A8100C4D5D0 /* Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Field.cpp; sourceTree = "<group>"; };
+		FA84BE811ADE5A8100C4D5D0 /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = "<group>"; };
+		FA84BE831ADE699100C4D5D0 /* PointCharge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointCharge.cpp; sourceTree = "<group>"; };
+		FA84BE841ADE699100C4D5D0 /* PointCharge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointCharge.h; sourceTree = "<group>"; };
+		FA84BE861ADE6A8700C4D5D0 /* ElectricMamager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ElectricMamager.cpp; sourceTree = "<group>"; };
+		FA84BE871ADE6A8700C4D5D0 /* ElectricMamager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectricMamager.h; sourceTree = "<group>"; };
+		FA84BE8A1ADE6ABA00C4D5D0 /* Definition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definition.h; sourceTree = "<group>"; };
+		FA84BE8E1ADE6B8C00C4D5D0 /* Definition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Definition.cpp; path = ../../../of_v0.8.4_osx_release/libs/openFrameworksCompiled/project/osx/Definition.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +199,8 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				FA84BE801ADE5A8100C4D5D0 /* Field.cpp */,
+				FA84BE811ADE5A8100C4D5D0 /* Field.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -200,6 +217,14 @@
 		FA98C53A1ADD545F00EADB06 /* Electronics */ = {
 			isa = PBXGroup;
 			children = (
+				FA84BE831ADE699100C4D5D0 /* PointCharge.cpp */,
+				FA84BE841ADE699100C4D5D0 /* PointCharge.h */,
+				FA84BE8A1ADE6ABA00C4D5D0 /* Definition.h */,
+				FA84BE8E1ADE6B8C00C4D5D0 /* Definition.cpp */,
+				FA84BE861ADE6A8700C4D5D0 /* ElectricMamager.cpp */,
+				FA84BE871ADE6A8700C4D5D0 /* ElectricMamager.h */,
+				FA84BE7D1ADE51EF00C4D5D0 /* ElectricField.cpp */,
+				FA84BE7E1ADE51EF00C4D5D0 /* ElectricField.h */,
 			);
 			name = Electronics;
 			sourceTree = "<group>";
@@ -291,8 +316,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA84BE8F1ADE6B8C00C4D5D0 /* Definition.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				FA84BE881ADE6A8700C4D5D0 /* ElectricMamager.cpp in Sources */,
+				FA84BE851ADE699100C4D5D0 /* PointCharge.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				FA84BE821ADE5A8100C4D5D0 /* Field.cpp in Sources */,
+				FA84BE7F1ADE51EF00C4D5D0 /* ElectricField.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
